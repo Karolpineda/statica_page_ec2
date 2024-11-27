@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_KEY }}
         source: "./*"  # Todos los archivos del repositorio
-        target: "/home/ec2-user/mi-repositorio"  # Ruta de destino en EC2
+        target: "/home/ec2-user/static_page_ec2"  # Ruta de destino en EC2
 
     - name: Restart Nginx
       run: |
